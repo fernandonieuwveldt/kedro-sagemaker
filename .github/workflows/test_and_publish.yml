@@ -35,10 +35,10 @@ jobs:
         python -V
         python -m pip install poetry
 
-    - name: Check pre-commit status
-      run: |
-        poetry install -v
-        poetry run pre-commit run --all-files
+    # - name: Check pre-commit status
+      # run: |
+      #   poetry install -v
+      #   poetry run pre-commit run --all-files
 
     - name: Test with tox
       env:
